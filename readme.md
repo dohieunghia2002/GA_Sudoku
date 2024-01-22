@@ -35,6 +35,7 @@ struct  Sudoku { // Cấu trúc của Sudoku
 
 ## Khởi tạo quần thể
 Ở đây, chúng ta chỉ ngẫu nhiên tạo ra một số **"lời giải"** (solution) để đánh giá. Nếu chúng ta muốn thuật toán của mình tối ưu hơn, chúng ta cần hỗ trợ nó một chút để việc tạo ra một cá thể không hoàn toàn ngẫu nhiên. Cách tiếp cận là tạo ra một **"lời giải"** tiềm năng mà không có sự trùng lặp trong các **khối**. Nhưng tất nhiên, có thể (và chắc chắn có) sự trùng lặp trong các hàng và cột.
+
 ![example](./images/ex_rand_individual.PNG)
 
 Các ô có màu xanh là những ô cố định (fixed) mà đề bài đã cho, không thể được thay thế trong quá trình điền ngẫu nhiên. Có thể thấy không có sự trùng lặp ở mỗi khối, nhưng có sự trùng lặp ở hàng và cột.
